@@ -1,0 +1,14 @@
+spring:
+ datasource:
+  url: jdbc:postgresql://localhost:5432/SpringDbConnectivity
+  username: postgres
+  password: P@ssw0rd
+ jpa:  
+  hibernate:
+    ddl-auto: update
+  show-sql: true
+  properties:   
+   dialect: org.hibernate.dialect.PostgreSQLDialect
+   hibernate:
+     jbdc:
+       "[batch_size]": 100
